@@ -30,14 +30,7 @@
 <body class="background-red _100vh">
   <div class="centered-2">
     <a href="index.html" class="brand margin-top-20 w-inline-block"><img src="images/it-agile-logo-cream.svg" loading="lazy" alt="Logo it-agile in Beige" class="logo"></a>
-    <div class="code-embed w-embed"><?php
-      $url  = 'https://api.campaign.episerver.net/http/form/registration-S33D/subscribe';
-      $url .= '?bmRecipientId=' . urlencode(utf8_decode($_POST['email']));
-      $url .= '&salutation=' . urlencode(utf8_decode($_POST['salutation']));
-      $url .= '&firstname=' . urlencode(utf8_decode($_POST['firstname']));
-      $url .= '&lastname=' . urlencode(utf8_decode($_POST['lastname']));
-      $result = @file_get_contents($url);
-    ?>
+    <div class="code-embed w-embed">
       <html>
       <head>
         <title>Whitepaper-Download</title>
@@ -47,24 +40,10 @@
 			h2 {color: #ebebdf;}
 </style>
       <body>
-        <p>
-          <?php
-        if ($result == 'ok') {
-      ?>
-        </p><h1>Vielen <br>Dank.</h1>
-        <?php
-        } else if ($result == 'duplicate') {
-      ?>
+        <h1>Vielen <br>Dank.</h1>
         <h2>Ihre Anmeldung war erfolgreich.</h2>
-        <?php
-        } else {
-      ?>
-        <h2>Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.</h2>
-        <?php
-        }
-      ?>
-        <p>
-      </p></body>
+	<h2>Das Whitepaper kommt gleich per Mail.</h2>
+	</body>
       </html>
     </div>
   </div>
