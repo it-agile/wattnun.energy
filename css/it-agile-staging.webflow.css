@@ -8,7 +8,7 @@
   --l: 8.75rem;
   --l-tablet: 6.25rem;
   --black: black;
-  --transparent: rgba(255, 255, 255, 0);
+  --transparent: #fff0;
   --xs: 1.125rem;
   --white: white;
 }
@@ -138,10 +138,7 @@ strong {
   width: 100vw;
   min-height: 86%;
   position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: auto;
+  inset: 0% auto auto 0%;
 }
 
 .background-red.absolut {
@@ -149,10 +146,7 @@ strong {
   width: 100vw;
   height: 69%;
   position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 0%;
-  right: auto;
+  inset: 0% auto auto 0%;
 }
 
 .background-red._100vh {
@@ -210,10 +204,7 @@ strong {
   margin-top: 95px;
   margin-right: auto;
   padding-top: 0;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  inset: 0%;
 }
 
 .icon-start-lightning._3 {
@@ -221,10 +212,7 @@ strong {
   margin-top: 180px;
   margin-right: auto;
   padding-top: 0;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  inset: 0%;
 }
 
 .icon-start-lightning._404 {
@@ -232,10 +220,7 @@ strong {
   margin-top: 111px;
   margin-bottom: 0;
   margin-right: 252px;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: 0%;
+  inset: 0% 0% auto auto;
 }
 
 .margin-bottom-0 {
@@ -304,8 +289,7 @@ strong {
   grid-column-gap: 40px;
   grid-template-rows: auto;
   grid-template-columns: 1fr .5fr;
-  align-items: start;
-  justify-items: start;
+  place-items: start;
 }
 
 .grid-facts {
@@ -378,10 +362,7 @@ strong {
   font-weight: 700;
   line-height: .87;
   position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  inset: 0%;
 }
 
 .grid-3 {
@@ -434,9 +415,14 @@ strong {
   margin-top: 20px;
 }
 
+.button-secondary._3 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
 .box-centered {
   text-align: center;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: #ffffff40;
   flex-flow: column;
   justify-content: space-between;
   align-items: stretch;
@@ -445,7 +431,7 @@ strong {
 }
 
 .box-centered:hover {
-  background-color: rgba(255, 255, 255, .45);
+  background-color: #ffffff73;
   transform: scale(1.02);
 }
 
@@ -517,7 +503,7 @@ strong {
 
 .wrapper-quote {
   padding: var(--m);
-  background-color: rgba(235, 235, 223, .45);
+  background-color: #ebebdf73;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -582,10 +568,7 @@ strong {
   width: 48%;
   height: 100%;
   position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: auto;
-  right: 0%;
+  inset: 0% 0% 0% auto;
 }
 
 .section-footer {
@@ -607,16 +590,16 @@ strong {
 
 .text-field:focus-visible {
   border: 1px solid var(--red);
-  box-shadow: 0 0 10px rgba(250, 50, 50, .4);
+  box-shadow: 0 0 10px #fa323266;
 }
 
 .text-field[data-wf-focus-visible] {
   border: 1px solid var(--red);
-  box-shadow: 0 0 10px rgba(250, 50, 50, .4);
+  box-shadow: 0 0 10px #fa323266;
 }
 
 .text-field::placeholder {
-  color: rgba(34, 34, 34, .4);
+  color: #2226;
 }
 
 .link-footer {
@@ -672,7 +655,6 @@ strong {
 }
 
 .content-left {
-  position: -webkit-sticky;
   position: sticky;
   top: 6.25em;
 }
@@ -703,7 +685,7 @@ strong {
 }
 
 .progress-bar-wrapper {
-  background-color: rgba(250, 50, 50, .35);
+  background-color: #fa323259;
   width: 4px;
   height: 87%;
   position: absolute;
@@ -769,10 +751,7 @@ strong {
 
 .logo-partner.start {
   position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: 0%;
+  inset: 0% 0% auto auto;
 }
 
 .wrapper-logo-partner {
@@ -780,7 +759,7 @@ strong {
 }
 
 .checkbox-label {
-  color: rgba(34, 34, 34, .6);
+  color: #2229;
   font-size: .938rem;
   line-height: 1.4;
 }
@@ -791,7 +770,7 @@ strong {
 }
 
 .link-opacity {
-  color: rgba(34, 34, 34, .6);
+  color: #2229;
   transition: color .2s;
 }
 
@@ -805,10 +784,7 @@ strong {
   margin-top: -8rem;
   margin-right: -5rem;
   position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: 0%;
+  inset: 0% 0% auto auto;
 }
 
 .checkbox {
@@ -1060,10 +1036,7 @@ strong {
     object-position: 50% 45%;
     width: 100%;
     height: 560px;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: 0%;
+    inset: 0% 0% auto;
   }
 
   .section-footer {
@@ -1125,10 +1098,7 @@ strong {
     height: 100px;
     margin-top: -5.1rem;
     margin-right: -2.2rem;
-    top: 0%;
-    bottom: auto;
-    left: auto;
-    right: 0%;
+    inset: 0% 0% auto auto;
   }
 
   .div-block {
@@ -1613,10 +1583,7 @@ strong {
     height: 85px;
     margin-top: 0;
     margin-bottom: -4.4rem;
-    top: auto;
-    bottom: 0%;
-    left: auto;
-    right: 0%;
+    inset: auto 0% 0% auto;
   }
 
   .div-block {
