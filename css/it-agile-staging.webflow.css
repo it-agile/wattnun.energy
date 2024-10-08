@@ -886,6 +886,18 @@ strong {
   margin-bottom: 1rem;
 }
 
+.logo-quote {
+  width: 115px;
+  margin-left: 15px;
+  padding-bottom: 2px;
+}
+
+.wrapper-quote-name {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   body {
     line-height: 1.45;
@@ -1296,6 +1308,10 @@ strong {
     height: 260px;
   }
 
+  .slider-testimonials {
+    margin-bottom: 10px;
+  }
+
   .quote {
     font-size: 1.375rem;
   }
@@ -1558,8 +1574,7 @@ strong {
   }
 
   .wrapper-quote {
-    padding-top: var(--m-mobile);
-    padding-bottom: var(--m-mobile);
+    padding: var(--m-mobile);
   }
 
   .icon-arrow {
@@ -1681,12 +1696,12 @@ strong {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-fcc7ab43-c099-bdda-c102-654cbddd8e3b-d587023d, #w-node-c8fecb52-f283-2bc3-6715-6380f6ace2b6-bc5f52aa {
+#w-node-fcc7ab43-c099-bdda-c102-654cbddd8e3b-d587023d, #w-node-ee2cf67c-5339-39be-e70b-f1822a5e2fb7-bc5f52aa {
   grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
 @media screen and (max-width: 991px) {
-  #w-node-fcc7ab43-c099-bdda-c102-654cbddd8e3b-d587023d, #w-node-c8fecb52-f283-2bc3-6715-6380f6ace2b6-bc5f52aa {
+  #w-node-fcc7ab43-c099-bdda-c102-654cbddd8e3b-d587023d, #w-node-ee2cf67c-5339-39be-e70b-f1822a5e2fb7-bc5f52aa {
     grid-column: span 1 / span 1;
   }
 }
