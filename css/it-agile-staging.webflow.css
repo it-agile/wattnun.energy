@@ -887,14 +887,23 @@ strong {
 }
 
 .logo-quote {
-  width: 115px;
+  height: 45px;
   margin-left: 15px;
   padding-bottom: 2px;
+}
+
+.logo-quote._2 {
+  height: 35px;
+}
+
+.logo-quote._3 {
+  height: 30px;
 }
 
 .wrapper-quote-name {
   justify-content: center;
   align-items: center;
+  margin-top: .625rem;
   display: flex;
 }
 
@@ -1174,6 +1183,18 @@ strong {
   .wrapper-brand {
     margin-top: -5rem;
   }
+
+  .logo-quote {
+    height: 40px;
+  }
+
+  .logo-quote._2 {
+    height: 32px;
+  }
+
+  .logo-quote._3 {
+    height: 28px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1423,6 +1444,14 @@ strong {
 
   .wrapper-brand {
     margin-bottom: .5rem;
+  }
+
+  .logo-quote._2 {
+    height: 30px;
+  }
+
+  .logo-quote._3 {
+    height: 25px;
   }
 }
 
@@ -1681,6 +1710,15 @@ strong {
 
   .h1-small {
     font-size: 1.8rem;
+  }
+
+  .logo-quote {
+    height: 35px;
+    margin-top: 10px;
+  }
+
+  .wrapper-quote-name {
+    flex-flow: column;
   }
 }
 
